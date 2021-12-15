@@ -17,5 +17,15 @@ public class Main {
         bobsAccount.whitdrawal(100);
         bobsAccount.deposit(150);
 
+        VipPerson person1 = new VipPerson();
+        System.out.println(person1.getName());
+
+        VipPerson person2 = new VipPerson("Bob", 25000);
+        System.out.println(person2.getName());
+
+        VipPerson person3 = new VipPerson("Tim", 1000, "adress");
+        System.out.println(person3.getName());
     }
+
+
 }

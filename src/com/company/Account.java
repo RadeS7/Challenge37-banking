@@ -10,11 +10,13 @@ public class Account {
     private String emailAdress;
     private String phoneNumber;
 
-    public Account (){
-        System.out.println("Empty constructor called");
-    }
+//    public Account (){
+//        this ("3333", 2.50, "Default name", "default adress", "default phone");
+//        System.out.println("Empty constructor called");
+//    }
+
     public Account (String accountNumber, double balance, String customerName, String emailAdress, String phoneNumber){
-        System.out.println();
+        System.out.println("Account constructor with parametars called");
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
@@ -22,6 +24,14 @@ public class Account {
         this.phoneNumber = phoneNumber;
 
     }
+
+    public Account(String customerName, String emailAdress, String phoneNumber) {
+
+        this.customerName = customerName;
+        this.emailAdress = emailAdress;
+        this.phoneNumber = phoneNumber;
+    }
+
 
     public void deposit (double depositAmmount){
         this.balance += depositAmmount;
